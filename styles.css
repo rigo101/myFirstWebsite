@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(topography.webp);
+    background-size: cover;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+nav {
+    height: 58px;
+    padding: 0 10%;
+    background-color: #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-mobile {
+    display: none;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    padding: 10px;
+}
+nav img {
+    width: 32px;
+    height: 32px;
+}
+nav ul li {  
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+}
+nav ul li:hover { 
+    background-color: #444;
+}
+nav ul li a {
+    padding: 19px;
+    color:#ff0099;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+main {
+    padding: 0 10%;
+}
+h1 {
+    font-size: 1.7em;
+    font-family: 'Roboto Slab', serif;
+}
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.4em;
+    font-weight: 800;
+    text-align: center;
+}
+.h3-profile {
+    color:#ff0099;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.separator {
+    text-align: center;
+    color: #a9a9a9;
+}
+.tech-wiki li {
+    padding-bottom: 6px;   
+}
+.tech-wiki h3 {
+    font-size: 20px;
+}
+footer {
+    height: 50px;
+    margin-top: 20px;
+    line-height: 50px;
+    color: antiquewhite;
+    font-size: 18px;
+    background-color: #333;
+    color: #ff0099;
+    font-style: italic;
+    text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+    .nav-desktop {
+        display: none;
+    }
+    .nav-mobile {
+        padding: 0;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-mobil { 
+        box-sizing: border-box;
+        width: 100vw;
+        height: 58px;
+        padding: 10px;
+        border-bottom: 1px solid #565656;
+        text-align: center;
+        cursor: pointer;
+    }
+    .menu-mobil {
+        flex-direction: column;
+    }
+    .menu-mobil li {
+        box-sizing: border-box;
+        border-bottom: 1px solid #565656;
+        background-color: #333;
+        z-index: 100;
+    }
+    .menu-mobil li a {
+        width: 100vw;
+        text-align: center;
+    }
+    main {
+        padding: 0 6%;
+    }
+}
